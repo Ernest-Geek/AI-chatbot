@@ -22,7 +22,7 @@ This repository houses the code for a lightweight, user-friendly AI chatbot buil
 3. Set up enviroment variables in env file
 
    ```
-   
+   DB_USER, DB_PASSWD
    ```
 4. Install packages used in project
 
