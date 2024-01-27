@@ -12,7 +12,7 @@ This repository houses the code for a lightweight, user-friendly AI chatbot buil
 1. Clone the project
  
    ```
-   
+   https://github.com/Ayine-nongre/AI-chatbot.git
    ```
 2. Change to project directory
 
