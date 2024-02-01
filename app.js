@@ -2,8 +2,10 @@ import express from 'express'
 import { db } from './config/database.js'
 import { authRouter } from './routes/authroutes.js'
 
+//creating an express app
 const app = express()
 
+//Configures the express app to parse incoming json data
 app.use(express.json())
 
 db.authenticate()

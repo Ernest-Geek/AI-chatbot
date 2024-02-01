@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Nexus</title>
+</head>
+
+<body>
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="container">
+      <a href="#">
+        <a class="logo" href="/">
+          <img src="/N.jpg" width="35" height="35" alt="Inc Logo" />
+        </a>
+        <!-- <h1 class="chatbot-name">Nexus</h1> -->
+      </a>
+      <div class="nav-start">
+        <!-- <a class="logo" href="/">
+          <img src="/N.jpg" width="35" height="35" alt="Inc Logo" />
+        </a> -->
+        
+        <nav class="menu">
+          <ul class="menu-bar">
+
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false"
+                aria-label="discover">
+                Getting Started
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Introduction</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#branding">How to use NEXUS</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#illustrations">Quick Guide</a>
+                  </li>
+                </ul>
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Download App</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#mac-windows">MacOS & Windows</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#linux">Linux</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="/">Login</a></li>
+            <li><a class="nav-link" href="/">FAQ</a></li>
+            <li><a class="nav-link" href="/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-end">
+        <div class="right-container">
+
+          <button class="btn btn-primary">Sign up</button>
+        </div>
+
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="chatbot-container">
+      <div class="chatbot-info">
+        <h1 class="chatbot-ID">NEXUS</h1>
+        <p class="chatbot-description">Nexus is an advanced AI-powered chatbot meticulously crafted to enhance your daily activities and streamline your workflow. Whether you need assistance with complex tasks, quick information retrieval, Nexus is your intelligent companion.</p>
+        <a href="#" class="get-started-btn">Get Started</a>
+      </div>
+    </div>
+    <div class="right-image">
+      <img src="/bot.webp" alt="Right Image" class="right-image">
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
