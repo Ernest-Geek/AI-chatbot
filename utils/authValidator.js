@@ -35,7 +35,7 @@ export const signupValidator = [
 export const loginValidator = [
     body('username')
     .notEmpty()
-    .withMessage("Username cannot be empty"),
+    .withMessage(`Username cannot be empty`),
     body('password')
     .notEmpty()
     .withMessage("Password cannot be empty"),
