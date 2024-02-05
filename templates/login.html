@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="/login.css">
+=======
+    <link rel="stylesheet" href="login.css">
+>>>>>>> 88980ff (new feature added)
 </head>
 
 <body>
@@ -27,7 +31,8 @@
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <input type="password" id="passwordSignUp" placeholder="Password" />
-                <input type="checkbox" id="showPasswordSignUp" onclick="togglePassword('passwordSignUp', 'showPasswordSignUp')" />
+<input type="password" id="confirmPasswordSignUp" placeholder="Confirm Password"> 
+<input type="checkbox" id="showPasswordSignUp" onclick="togglePassword('passwordSignUp', 'confirmPasswordSignUp', 'showPasswordSignUp')" />
                 <button>Sign Up</button>
             </form>
         </div>
@@ -62,7 +67,7 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
