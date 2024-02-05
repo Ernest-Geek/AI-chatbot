@@ -6,11 +6,8 @@ export const authRouter = express.Router()
 
 authRouter.post("/signup", signupValidator, signup)
 
-<<<<<<< HEAD
 authRouter.get("/login", function(req, res){
     res.sendFile(process.cwd() + "/templates/login.html")
 })
+
 authRouter.post("/login", loginValidator, login)
-=======
-authRouter.post("/login", loginValidator, login)
->>>>>>> 88980ff (new feature added)
