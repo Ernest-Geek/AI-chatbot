@@ -11,3 +11,8 @@ authRouter.get("/login", function(req, res){
 })
 
 authRouter.post("/login", loginValidator, login)
+<<<<<<< HEAD
+=======
+
+authRouter.post("/login", loginValidator, login)
+>>>>>>> aa87836 (update)
