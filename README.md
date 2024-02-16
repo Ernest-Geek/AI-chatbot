@@ -35,7 +35,8 @@ This repository houses the code for a lightweight, user-friendly AI chatbot buil
     nodemon app.js
     ```
 
-## DISCLAIMER
+## Usage
+Using our AI chatbot is very simple and easy to get started with all you need to do is click get started on the homepage and either login or signup to use the chatbot once your're logged in Click or tap the start button, allow your browser access to your microphone and speak audibly into your microphone the chatbot listens and then responses appropriately to your input
 
 
 
