@@ -5,92 +5,141 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/main.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <title>Nexus</title>
 </head>
 
 <body>
-  <header id="nav-menu" aria-label="navigation bar">
-    <div class="container">
-      <a href="#">
-        <a class="logo" href="/">
-          <img src="/images/N.jpg" width="35" height="35" alt="Inc Logo" />
-        </a>
-        <!-- <h1 class="chatbot-name">Nexus</h1> -->
-      </a>
-      <div class="nav-start">
-        <!-- <a class="logo" href="/">
-          <img src="/N.jpg" width="35" height="35" alt="Inc Logo" />
-        </a> -->
-        
-        <nav class="menu">
-          <ul class="menu-bar">
-
-            <li>
-              <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false"
-                aria-label="discover">
-                Getting Started
-                <i class="bx bx-chevron-down" aria-hidden="true"></i>
-              </button>
-              <div id="dropdown2" class="dropdown">
-                <ul role="menu">
-                  <li>
-                    <span class="dropdown-link-title">Introduction</span>
-                  </li>
-                  <li role="menuitem">
-                    <a class="dropdown-link" href="#branding">How to use NEXUS</a>
-                  </li>
-                  <li role="menuitem">
-                    <a class="dropdown-link" href="#illustrations">Quick Guide</a>
-                  </li>
-                </ul>
-                <ul role="menu">
-                  <li>
-                    <span class="dropdown-link-title">Download App</span>
-                  </li>
-                  <li role="menuitem">
-                    <a class="dropdown-link" href="#mac-windows">MacOS & Windows</a>
-                  </li>
-                  <li role="menuitem">
-                    <a class="dropdown-link" href="#linux">Linux</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li><a class="nav-link" href="/api/auth/login">Login</a></li>
-            <li><a class="nav-link" href="/">FAQ</a></li>
-            <li><a class="nav-link" href="/">About</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="nav-end">
-        <div class="right-container">
-
-          <button class="btn btn-primary">Sign up</button>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+          <a class="logo" href="/">
+            <img src="/images/N.jpg" width="35" height="35" alt="Inc Logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+                <!-- <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false"
+                  aria-label="discover">
+                  Getting Started
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button> -->
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Introduction</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#branding">How to use NEXUS</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#illustrations">Quick Guide</a>
+                    </li>
+                  </ul>
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Download App</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#mac-windows">MacOS & Windows</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Linux</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" href="/api/auth/login">Login</a></li>
+              <li><a class="nav-link" href="/">FAQ</a></li>
+              <li><a class="nav-link" href="/">About</a></li>
+            </ul>
+          </nav>
+          <div class="nav-end">
+            <div class="right-container">
+              <button class="btn btn-primary">Sign up</button>
+            </div>
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
+      </header>
+      
 
-        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-          <i class="bx bx-menu" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="chatbot-container">
-      <div class="chatbot-info">
-        <h1 class="chatbot-ID">NEXUS</h1>
-        <p class="chatbot-description">Nexus is an advanced AI-powered chatbot meticulously crafted to enhance your daily activities and streamline your workflow. Whether you need assistance with complex tasks, quick information retrieval, Nexus is your intelligent companion.</p>
-        <a href="#" class="get-started-btn">Get Started</a>
-      </div>
-    </div>
-    <div class="right-image">
-      <img src="/images/bot.webp" alt="Right Image" class="right-image">
+<div class="container">
+  <div class="chatbot-container">
+    <div class="chatbot-info">
+      <h1 class="chatbot-ID">NEXUS</h1>
+      <p class="chatbot-description">Nexus is an advanced AI-powered chatbot meticulously crafted to enhance your daily activities and streamline your workflow. Whether you need assistance with complex tasks, quick information retrieval, Nexus is your intelligent companion.</p>
+      <a href="#" class="get-started-btn">Get Started</a>
     </div>
   </div>
+  <div class="right-image">
+    <img src="/images/bot.webp" alt="Right Image" class="right-image">
+  </div>
+</div>
+
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>We are students at ALX, striving to become top-notch software engineers in the industry.</p>
+</div>
+
+<h2 style="text-align:center; margin-top: 50px;">Meet the Team</h2>
+
+<div class="team-section">
+    <div class="team-member">
+        <!-- <img src="eugene.jpg" alt="Eugene Atinbire"> -->
+        <h3>Eugene Atinbire</h3>
+        <p>Lead Software Engineer</p>
+        <p>Eugene is a dedicated and passionate individual with a strong background in software development.</p>
+        <p>
+            <a href="https://twitter.com/eugene_atinbire" target="_blank">
+                <i class="bx bxl-twitter"></i> Twitter
+            </a>
+            |
+            <a href="https://github.com/eugene_atinbire" target="_blank">
+                <i class="bx bxl-github"></i> GitHub
+            </a>
+            |
+            <a href="mailto:eugene@example.com">
+                <i class="bx bx-mail-send"></i> Email
+            </a>
+        </p>
+    </div>
+    <div class="team-member">
+        <!-- <img src="ernest.jpg" alt="Ernest Ampene"> -->
+        <h3>Ernest Ampene</h3>
+        <p>Product Manager</p>
+        <p>Ernest is a visionary leader with a knack for product development and project management.</p>
+        <p>
+            <a href="https://twitter.com/ernest_ampene" target="_blank">
+                <i class="bx bxl-twitter"></i> Twitter
+            </a>
+            |
+            <a href="https://github.com/ernest_ampene" target="_blank">
+                <i class="bx bxl-github"></i> GitHub
+            </a>
+            |
+            <a href="mailto:ernest@example.com">
+                <i class="bx bx-mail-send"></i> Email
+            </a>
+        </p>
+    </div>
+</div>
+
+
+
+
+  <div class="container">
+    <!-- <h2>Eugene Atinbire</h2> -->
+    <!-- <p class="title">Tech Lead(Backend)</p>
+    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+    <p>jane@example.com</p>
+    <p><button class="button">Contact</button></p>
+  </div> -->
+
   
-  <script src="script.js"></script>
+<script src="/script.js"></script>
 </body>
 
 </html>
