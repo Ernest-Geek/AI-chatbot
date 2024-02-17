@@ -14,7 +14,7 @@ const app = express();
 const httpServer = createServer(app);
 export const io = new Server(httpServer, {
     cors: {
-        origin: 'http://127.0.0.1:43693',
+        origin: 'http://127.0.0.1:36317',
         credentials: true
     }
 });
