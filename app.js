@@ -19,7 +19,7 @@ export const io = new Server(httpServer, {
     }
 });
 
-httpServer.listen(process.env.PORT || 3000);
+httpServer.listen(3000);
 
 //Configures the express app to parse incoming json data
 app.use(express.json())
