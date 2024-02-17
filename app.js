@@ -14,12 +14,12 @@ const app = express();
 const httpServer = createServer(app);
 export const io = new Server(httpServer, {
     cors: {
-        origin: 'http://localhost:5000',
+        origin: 'https://nexus-chat-f1ug.onrender.com',
         credentials: true
     }
 });
 
-httpServer.listen(3000);
+httpServer.listen(process.env.PORT || 3000);
 
 //Configures the express app to parse incoming json data
 app.use(express.json())
@@ -86,6 +86,6 @@ app.get("/chat", function(req, res){
     res.sendFile(process.cwd() + "/templates/chat.html")
 })
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log(`Server is running on ${5000}`)
 })
