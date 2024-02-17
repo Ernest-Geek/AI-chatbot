@@ -1,0 +1,66 @@
+body {
+    background-image: url("/images/back.webp");
+    background-size: cover;
+}
+.circle-icon {
+    /* Your existing styles */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it round */
+    background-color: rgb(42, 201, 201); /* Background color */
+    color: white; /* Icon color */
+    margin-left: 45%; /* Align to the center */
+    margin-right: auto; /* Align to the center */
+    margin-top: 5px; /* Adjust the space between circle and chat container */
+    margin-bottom: 15px; /* Adjust the space between circle and chat container */
+}
+
+  
+  .center-text {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 60px;
+    font-weight: 20;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight: 20;
+    color: #555;
+  }
+
+  .chat-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px; /* Adjust the space between circle and chat container */
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.user {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bot {
+    background-color: rgb(42, 201, 201);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
