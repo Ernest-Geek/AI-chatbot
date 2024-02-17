@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Speech</title>
+    <link rel="stylesheet" href="/chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <button>Start</button>
+    <h1 class="center-text">Simple AI Chatbot</h1>
+    <h2>with Web Speech API</h2>
+    <div class="circle-icon">
+        <box-icon type='solid' name='microphone' style="font-size: 90%;"></box-icon>
+    </div>
+    <div class="chat-container">
+        <div class="chat">
+            <div class="user">User:</div>
+            <div class="bot">Bot:</div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script type="module">
         import { io } from "https://cdn.socket.io/4.7.4/socket.io.esm.min.js";
+        import 'boxicons'
 
         const socket = io.connect("http://localhost:3000")
 
@@ -45,4 +59,5 @@
         }
     </script>
 </body>
-</html>50gb      = GH¢ 200.00
+</html>
+

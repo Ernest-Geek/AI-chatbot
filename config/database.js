@@ -6,7 +6,7 @@ dotenv.config()
 
 //Database connection setup
 export const db = new Sequelize(
-    'defaultdb',
+    'botDB',
 //retrieves the database username from the env variable
     process.env.DB_USER,
 //retrieves the database username from the env variable
