@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Speech</title>
-    <link rel="stylesheet" href="../static/chat.css">
+    <title>Nexus | Chat</title>
+    <link rel="stylesheet" href="/chat.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -34,7 +34,8 @@
 
             recognition.addEventListener('result', (event) => {
                 const transcript = event.results[0][0].transcript;
-                console.log('Recognized speech:', transcript);
+                console.log(transcript)
+                document.getElementsByClassName("user")[0].innerHTML = `User: ${transcript}`
                 socket.emit('chat message', transcript);
             });
 
@@ -56,6 +57,20 @@
                 console.error('Button not found.');
             }
         }
+
+        function synthVoice(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance();
+            utterance.text = text;
+            synth.speak(utterance);
+        }
+
+
+        socket.on('response', (res) => {
+            document.getElementsByClassName("bot")[0].innerHTML = `Bot: ${res}`
+            synthVoice(res)
+            console.log(`Response: ${res}`)
+        })
     </script>
 </body>
 </html>

@@ -14,7 +14,7 @@ const app = express();
 const httpServer = createServer(app);
 export const io = new Server(httpServer, {
     cors: {
-        origin: 'http://127.0.0.1:36317',
+        origin: 'http://localhost:5000',
         credentials: true
     }
 });
@@ -65,6 +65,8 @@ io.on('connection', function(socket) {
             const result = responses[0].queryResult;
             console.log(`  Query: ${result.queryText}`);
             console.log(`  Response: ${result.fulfillmentText}`);
+            const res = result.fulfillmentText
+            socket.emit('response', res)
             if (result.intent) {
                 console.log(`  Intent: ${result.intent.displayName}`);
             } else {
@@ -79,6 +81,10 @@ app.get("/", function(req, res){
 })
 
 app.use("/api/auth", authRouter)
+
+app.get("/chat", function(req, res){
+    res.sendFile(process.cwd() + "/templates/chat.html")
+})
 
 app.listen(5000, () => {
     console.log(`Server is running on ${5000}`)

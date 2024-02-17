@@ -12,10 +12,7 @@ export const createToken = (user, res, statusCode) => {
     })
 
     
-    res.status(statusCode).json({
-        status: "Success",
-        user: user
-    })
+    res.redirect('/chat')
 }
 
 export const verifyToken = (req, res, next) => {
