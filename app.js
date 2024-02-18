@@ -32,6 +32,9 @@ db.authenticate()
 
 const sessionId = '1234';
 const projectId = process.env.PROJECT_ID
+
+
+console.log(process.env.GOOGLE_PRIVATE_KEY)
     
 const credentials = {
    client_email: process.env.CLIENT_EMAIL,
