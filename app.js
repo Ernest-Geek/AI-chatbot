@@ -14,7 +14,7 @@ const app = express();
 const httpServer = createServer(app);
 export const io = new Server(httpServer, {
     cors: {
-        origin: 'http://127.0.0.1:43693',
+        origin: 'https://nexus-chat-f1ug.onrender.com',
         credentials: true
     }
 });
@@ -35,7 +35,7 @@ const projectId = process.env.PROJECT_ID
     
 const credentials = {
    client_email: process.env.CLIENT_EMAIL,
-   private_key: process.env.GOOGLE_PRIVATE_KEY
+   private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
 }
 
 const sessionClient = new dialogflow.SessionsClient({ projectId, credentials });
@@ -65,6 +65,8 @@ io.on('connection', function(socket) {
             const result = responses[0].queryResult;
             console.log(`  Query: ${result.queryText}`);
             console.log(`  Response: ${result.fulfillmentText}`);
+            const res = result.fulfillmentText
+            socket.emit('response', res)
             if (result.intent) {
                 console.log(`  Intent: ${result.intent.displayName}`);
             } else {
@@ -80,6 +82,10 @@ app.get("/", function(req, res){
 
 app.use("/api/auth", authRouter)
 
-app.listen(5000, () => {
+app.get("/chat", function(req, res){
+    res.sendFile(process.cwd() + "/templates/chat.html")
+})
+
+app.listen(process.env.PORT || 5000, () => {
     console.log(`Server is running on ${5000}`)
 })
